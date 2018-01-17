@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sorteio</title>
+</head>
+<body>
+	<style type="text/css">
+		div{
+			border: 1px solid #aaa;
+			width: 200px;
+			height: 160px;
+			margin: 0 10px;
+			border-radius: 10px;
+			font-size: 80px;
+			text-align: center;
+			padding-top: 40px;
+			color: #077;
+			background-color: #077;
+
+		}
+
+		section{
+			display: flex;
+		}
+
+	</style>
+
+	<section>
+		<div id="div1" onmouseover="trocarCor('#div1')"></div>  
+		<div id="div2" onmouseover="trocarCor('#div2')"></div>  
+		<div id="div3" onmouseover="trocarCor('#div3')"></div>  
+		<div id="div4" onmouseover="trocarCor('#div4')"></div>  
+		<div id="div5" onmouseover="trocarCor('#div5')"></div>  
+		
+		
+	</section>
+
+	<script type="text/javascript">
+
+		let div1 = document.querySelector("#div1");
+		let div2 = document.querySelector("#div2");
+		let div3 = document.querySelector("#div3");
+		let div4 = document.querySelector("#div4");
+		let div5 = document.querySelector("#div5");
+
+		div1.innerText = Math.ceil(Math.random() * 60);
+		div1.innerText = Math.ceil(Math.random() * 60);
+		div1.innerText = Math.ceil(Math.random() * 60);
+		div1.innerText = Math.ceil(Math.random() * 60);
+		div1.innerText = Math.ceil(Math.random() * 60);
+		
+		
+
+		function trocarCor(seletor){
+			let div = document.querySelector(seletor);
+			div.style.backgroundColor = 'white';
+		}
+
+	</script>
+
+
+</body>
+</html>
